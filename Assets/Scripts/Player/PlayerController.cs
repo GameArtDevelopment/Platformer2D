@@ -121,7 +121,7 @@ public class PlayerController : MonoBehaviour
 
         jumpBufferCounter -= Time.deltaTime;
 
-        // Update Animations
+        UpdateAnimator();
     }
 
     private void FixedUpdate()
@@ -171,21 +171,30 @@ public class PlayerController : MonoBehaviour
         if (isDoubleJump)
         {
             canDoubleJump = false;
-            //anim.SetTrigger("doDoubleJump");
+            anim.SetTrigger("doDoubleJump");
         }
         else
         {
-            //anim.SetTrigger("doJump");
+            anim.SetTrigger("doJump");
         }
 
         // Handle Audio and Particles managers
 
     }
 
+    private void UpdateAnimator()
+    {
+        anim.SetFloat("speed", Mathf.Abs(rb.linearVelocity.x));
+        anim.SetBool("isGrounded", isGrounded);
+        anim.SetFloat("ySpeed", rb.linearVelocity.y);
+        anim.SetBool("isDoubleJumping", !isGrounded && !canDoubleJump);
+        anim.SetBool("isRunning", runAction.IsPressed());
+    }
+
     public void KnockBack()
     {
         rb.linearVelocity = new Vector2(-Mathf.Sign(transform.localScale.x) * knockbackForce, jumpForce * 0.5f);
-        //anim.SetTrigger("isKnockingBack");
+        anim.SetTrigger("isKnockingBack");
         knockbackTimer = knockbackDuration;
     }
 
@@ -193,7 +202,7 @@ public class PlayerController : MonoBehaviour
     {
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, bounceAmount);
         canDoubleJump = true;
-        //anim.SetTrigger("doBounce");
+        anim.SetTrigger("doBounce");
     }
 
     //Delete before publiching
