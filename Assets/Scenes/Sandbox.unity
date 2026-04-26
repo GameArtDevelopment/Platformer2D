@@ -1058,7 +1058,11 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
   m_LocalScale: {x: 1, y: 1, z: 1}
+=======
+  m_LocalScale: {x: 2, y: 2, z: 2}
+>>>>>>> Stashed changes
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1389016907}
@@ -1112,12 +1116,20 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
+<<<<<<< Updated upstream
   m_Sprite: {fileID: -4784303693153902740, guid: 36551acd9d3c7424b845ead287b15f29, type: 3}
+=======
+  m_Sprite: {fileID: -4784303693153902740, guid: 72800dd6bf3244849928b1c99f822edb, type: 3}
+>>>>>>> Stashed changes
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
+<<<<<<< Updated upstream
   m_Size: {x: 0.8, y: 0.98}
+=======
+  m_Size: {x: 1, y: 1}
+>>>>>>> Stashed changes
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1423,7 +1435,11 @@ Transform:
   m_GameObject: {fileID: 722559509}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 0, y: -1, z: 0}
+=======
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2056,7 +2072,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< Updated upstream
   m_Sprite: {fileID: 1289423339, guid: 6364e681025ba42499822909dad71f2f, type: 3}
+=======
+  m_Sprite: {fileID: -2736927149447006642, guid: a40e34654236c409bb00099cba2e2910, type: 3}
+>>>>>>> Stashed changes
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2125,7 +2145,10 @@ GameObject:
   - component: {fileID: 1389016911}
   - component: {fileID: 1389016910}
   - component: {fileID: 1389016912}
+<<<<<<< Updated upstream
   - component: {fileID: 1389016913}
+=======
+>>>>>>> Stashed changes
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -2185,7 +2208,11 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
+<<<<<<< Updated upstream
   m_Size: {x: 1, y: 1.9}
+=======
+  m_Size: {x: 0.5, y: 1}
+>>>>>>> Stashed changes
   m_Direction: 0
 --- !u!50 &1389016909
 Rigidbody2D:
@@ -2261,12 +2288,52 @@ MonoBehaviour:
   groundCheckPoint: {fileID: 722559510}
   groundCheckRadius: 0.2
   groundMask:
+<<<<<<< Updated upstream
     serializedVersion: 2
+=======
+>>>>>>> Stashed changes
     m_Bits: 256
   knockbackForce: 10
   knockbackDuration: 0.5
   rb: {fileID: 1389016909}
   anim: {fileID: 1389016910}
+<<<<<<< Updated upstream
+=======
+  moveAction:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: ed85444b-635e-49be-ab95-c8eaf48c5b58
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  jumpAction:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 1e7c7f3b-a6d7-4879-9e91-f4637c4ced4a
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  runAction:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 33c04154-a3f1-4e4d-b438-9b4c2ee0c334
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  currentMoveInput: 0
+  isGrounded: 0
+  canDoubleJump: 0
+  jumpBufferCounter: 0
+  coyoteCounter: 0
+  knockbackTimer: 0
+  jumpHeld: 0
+>>>>>>> Stashed changes
 --- !u!114 &1389016912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2297,6 +2364,7 @@ MonoBehaviour:
   m_DefaultActionMap: 
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+<<<<<<< Updated upstream
 --- !u!212 &1389016913
 SpriteRenderer:
   serializedVersion: 2
@@ -2356,6 +2424,8 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1474274861
 GameObject:
   m_ObjectHideFlags: 0
